@@ -1,0 +1,286 @@
+body, html {
+  height: 100%;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #222;
+}
+
+img {
+  display: block;
+}
+
+.App {
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("http://localhost:3000/images/background.png");
+  background-size: cover;
+  background-position: center -80px;
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.Container {
+  width: 700px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  background-color: rgba(85, 0, 101,0.95);
+  border-radius: 5px;
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 10px #000;
+  position: relative;
+}
+
+.Content {
+  display: block;
+}
+
+.Title {
+  margin: 0 auto 40px;
+  text-align: center;
+  padding: 10px;
+  font-weight: bolder;
+  color: #fff;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 60px;
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,1);
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  pointer-events: auto;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #550065;
+  transition: 0.2s all ease-in;
+}
+
+button:disabled, button[disabled] {
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.3);
+  cursor: default;
+  pointer-events: none;
+}
+
+.Form {
+  margin-bottom: 40px;
+}
+
+.Form .Profile {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-height: 38px;
+  padding: 2px 8px;
+  margin-bottom: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  font-size: 16px;
+  color: #222;
+}
+
+.EmailError {
+  width: 100%;
+  margin:0;
+  padding:0;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.EmailError span {
+  background-color: red;
+  color:#fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.Form .Team, .Form .Opposition {
+  margin-bottom: 20px;
+  width: 48%;
+  display: inline-block;
+}
+
+.Form .Opposition {
+  float: right;
+}
+
+.MatchDetails {
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.MatchDetails .Teams {
+  margin-bottom: 40px;
+  position: relative;
+  width: 50%;
+  float: left;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.MatchDetails .Teams h3 {
+  
+}
+
+.MatchDate {
+  float: right;
+  border: 1px solid #222;
+  border-radius: 2px;
+  padding: 2px;
+  color: #222;
+  font-size: 10px;
+}
+
+.MatchDetails .Country {
+  position: relative;
+}
+
+.MatchDetails .Country img {
+  display: inline-block;
+  margin-right: 10px;
+  height: 30px;
+  vertical-align: middle;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px #aaa;
+}
+
+.MatchDetails .CountryName {
+  display: inline-block;
+  color: #222;
+  font-size: 16px;
+}
+
+.MatchDetails .Team {
+  margin-bottom: 20px;
+}
+
+.MatchDetails .Opposition {
+  
+}
+
+.MatchDetails .Player {
+  width: 45%;
+  float: right;
+  text-align: center;
+}
+
+.MatchDetails .Player img {
+  background: #fff;
+  width: 100%;
+  background: linear-gradient( rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4) ), url("http://localhost:3000/images/background.png");
+  background-size: 1200px auto;
+  background-position: top right;
+}
+
+.MatchDetails .PlayerName {
+  background-color: #fff;
+  margin: 0;
+  color: #222;
+  padding: 10px 0px;
+}
+
+.Hide {
+  display: none;
+}
+
+.Confirmation {
+  background-color: white;
+  text-align: center;
+  height: 100%;
+}
+
+.Confirmation h1 {
+  color: #222;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.Confirmation .Hero {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.Confirmation .Icon {
+  width: 150px;
+  margin: 0 auto 20px;
+}
+
+.Confirmation h3 {
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.EventsFeed {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 350px;
+  background: rgba(85, 0, 101,0.8);
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+
+.EventsFeed h3 {
+  color: #fff;
+  margin-bottom: 20px;;
+}
+
+.Event {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.EventPlayer {
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.EventTeams {
+  line-height: 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+.Event .ResultIcon {
+  display: inline-block;
+  width: 20px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.Event .ResultText {
+  line-height: 30px;
+  vertical-align: top;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
