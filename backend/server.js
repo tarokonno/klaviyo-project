@@ -3,6 +3,7 @@ const app = express()
 const port = 5000
 const axios = require('axios')
 const bp = require('body-parser')
+const key = "Klaviyo-API-Key pk_8564f8d7caa7f6d04f7d0140b51bafab81"
 
 app.use(bp.json())
 app.use(bp.urlencoded({ extended: true }))
@@ -13,7 +14,7 @@ app.get('/api', (req, res) => {
   res.send('This is the root endpoint, nice!')
 })
 
-// Get Profiles API Endpoint
+// Get Profiles from Klaviyo API Endpoint
 
 app.get('/api/profiles', (req, res) => {
   const options = {
@@ -22,7 +23,7 @@ app.get('/api/profiles', (req, res) => {
     headers: {
       accept: 'application/json',
       revision: '2022-10-17',
-      Authorization: 'Klaviyo-API-Key pk_8564f8d7caa7f6d04f7d0140b51bafab81'
+      Authorization: key
     }
   };
   
@@ -36,7 +37,7 @@ app.get('/api/profiles', (req, res) => {
     })
 })
 
-// Post Event API Endpoint
+// Post Penalty Events to Klaviyo API Endpoint
 
 app.post('/api/shot', (req, res) => {
 console.log(req.body.result)
@@ -48,7 +49,7 @@ const options = {
     accept: 'application/json',
     revision: '2022-10-17',
     'content-type': 'application/json',
-    Authorization: 'Klaviyo-API-Key pk_8564f8d7caa7f6d04f7d0140b51bafab81'
+    Authorization: key
   },
   data: {
     data: {
@@ -75,7 +76,7 @@ axios
 
 })
 
-// Get All Results from Event API Endpoint
+// Get All Penalty Results from Event API Endpoint
 
 app.get('/api/events', (req, res) => {
   const options = {
@@ -84,7 +85,7 @@ app.get('/api/events', (req, res) => {
     headers: {
       accept: 'application/json',
       revision: '2022-10-17',
-      Authorization: 'Klaviyo-API-Key pk_8564f8d7caa7f6d04f7d0140b51bafab81'
+      Authorization: key
     }
   };
   

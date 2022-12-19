@@ -14,7 +14,6 @@ function App() {
 
   // Set State and Defaults
   const [allProfilesData, setAllProfilesData] = useState([{}])
-  const [profileData, setProfileData] = useState([{}])
   const [isProfileValid, setIsProfileValid] = useState(true)
   const [teamData, setTeamData] = useState({name: 'TBD', flag: '../images/country.png'})
   const [oppositionData, setOppositionData] = useState({name: 'TBD', flag: '../images/country.png'})
@@ -54,7 +53,6 @@ function App() {
 
   // Update Profile Function
   const updateProfile = (e) => {
-    setProfileData({email: e.target.value})
 
     // Validate Input with Profiles API data
     const findProfile = profiles.find((profile) => profile.attributes.email.toLowerCase() === (e.target.value.toLowerCase()))
