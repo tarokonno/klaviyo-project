@@ -6,7 +6,6 @@ import Select from 'react-select'
 import './App.css'
 
 function App() {
-  let don = "don"
 
   // Set Current Date
   const months = ["Jan", "Feb", "Mar","Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
