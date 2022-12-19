@@ -1,6 +1,6 @@
 ## klaviyo-project
 
-klayvio-project is an app project that demonstrates frontend development and the learnings and use of APIs within the klaviyo platform. It is a FIFA World Cup 2022 themed Penalty Shootout App that aims to achieve the following:
+klayvio-project is an app project that demonstrates frontend development and the learnings and use of APIs within the klaviyo platform. It is a FIFA World Cup 2022 themed Penalty Shootout App, simply:
 - Enter the email address associated to your klaviyo account
 - Select your team, opponent and player for the penalty kick
 - Click the 'Shoot' button that sends the information to the klaviyo platform in the form of an event
